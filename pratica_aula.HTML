@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>minah pagina - Fontes, Mapa e Video</title>
+
+    <!--1. GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link href="https://fonts.googleapis.com/css2? 
+          family=roboto: wght@400;700
+          & family= : playfair+displaywght@700
+          & display=swap"
+          rel="stylesneet">
+    <link rel="stylesheet" href="style.css">      
+    
+</head>
+
+<body>
+    
+    <header>
+        <h1> minha pagina completa </h1>
+        <p>fonte, mapas e videos em html</p>
+        <main>
+            <section>
+                <h2>sobre o local </h2>
+                <p>
+                    este texto usa a forma <strong>roboto</strong>,
+                    importada do google Fonts. Fontes externas 
+                    deixam o  site com uma aparencia mais profissional 
+                </p>
+                <p>
+                    você pode combinar varias fontes: uma para titulos 
+                    e outra para o corpo do texto
+                </p>
+            </section>
+            <!-- pra trocar o mapa -->
+            <!-- 1.  acesse maps.google.com -->
+            <!-- 2. compartilhar > imcorporar o mapa -->
+            <!-- 3. copie o crs e cole abaixo -->
+            <section>
+                <h2>Localização</h2>
+                <p> encontre-nos no codigo abaixo:</p>
+                <div class="mapa-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.76444155246!2d-46.6559779849149!3d-23.561258384675538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59f03c8a9fa5%3A0x2f8c04aba31dec1c!2sAv.%20Paulista%2C%201000%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1690000000000"
+                        width="600"
+                        height="450"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="mapa de Localização">
+                    </iframe>
+                </div>
+            </section>
+
+            <!--coloque o video na pasta de video/ -->
+            <!-- troque meu video .mp4 pelo seu arquivo -->
+             <section>
+                <h2>video</h2>
+                <div class="video-container">
+                    <video controls loop poster="imagens/capa.jpg">
+                        <source src="video/video.mp4" type="video/mp4">
+                        <source src="video/meu-video.webm" type="video/webm">
+                        seu navegador nao suporta a reproduçao de 
+                    </video>
+                </div>
+                <p calss="video-info">
+                    formatos suportados: mp4 (recomendao), webm, ogg
+                </p>
+             </section>
+
+        </main>
+
+        <footer>
+            <p>aula de frontend &mdash; fontes, mapas e videos</p>
+        </footer>
+
+
+    </header>
+</body>
+</html>
